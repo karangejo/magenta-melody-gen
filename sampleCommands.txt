@@ -1,0 +1,11 @@
+#basic rnn
+melody_rnn_generate --config=basic_rnn --bundle_file=basic_rnn.mag --output_dir=~/Documents/magentaTutorial/generated --num_outputs=10 --num_steps=128 --primer_melody="[60]"
+
+# lookback rnn
+melody_rnn_generate --config=lookback_rnn --bundle_file=lookback_rnn.mag --output_dir=~/Documents/magentaTutorial/generated --num_outputs=10 --num_steps=128 --primer_melody="[60]"
+
+# attention rnn
+melody_rnn_generate --config=attention_rnn --bundle_file=attention_rnn.mag --output_dir=~/Documents/magentaTutorial/generated --num_outputs=10 --num_steps=128 --primer_melody="[60]"
+
+# generate with midi priming
+melody_rnn_generate --config=attention_rnn --bundle_file=attention_rnn.mag --output_dir=~/Documents/magentaTutorial/generated --num_outputs=10 --num_steps=128 --primer_midi=/path/to/midifile.mid
